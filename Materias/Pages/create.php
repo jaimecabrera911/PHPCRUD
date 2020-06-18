@@ -7,9 +7,17 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Sistema de Notas</title>
     </head>
     <body>
+        <h1>Registrar Materias</h1>
+        <form action="../Controladores/create.php" method="POST">
+            <label>Materia</label>
+            <input type="text" required="" name="materia" placeholder="Ejemplo, Matemaricas"></input>
+            <br>
+            <br>
+            <input type="submit" value="Registrar">
+        </form>
         <?php
         // put your code here
         ?>

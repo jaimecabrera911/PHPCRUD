@@ -7,11 +7,11 @@ class Conexion {
     private $host = "localhost";
     private $dbname = "notas";
     private $username = "root";
-    private $passw = "root";
+    private $password = "root";
 
     function __construct() {
         try {
-             $db = new PDO("{$this->driver}:host={$this->host}:dbname={$this->dbname}", $this->username, $this->passwd);
+             $db = new PDO("{$this->driver}:host={$this->host}:dbname={$this->dbname}", $this->username, $this->password);
              $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();
